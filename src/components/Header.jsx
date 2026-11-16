@@ -5,6 +5,7 @@ const AVATAR_COLORS = {
   arthur:   '#0a7d3c',
   julia:    '#7c3aed',
   raquel:   '#2f5597',
+  andressa: '#0891b2',
 }
 
 export default function Header({ displayName, onLogout, isDemo }) {

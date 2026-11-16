@@ -9,7 +9,7 @@ const STATUS_OPTIONS = [
   'Pausada',
 ]
 
-const MEMBERS = ['Arthur', 'Julia', 'Raquel']
+const MEMBERS = ['Arthur', 'Julia', 'Raquel', 'Andressa']
 
 function addBusinessDays(startStr, days) {
   if (!startStr || !days) return ''

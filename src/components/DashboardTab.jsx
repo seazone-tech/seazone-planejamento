@@ -10,6 +10,7 @@ const MEMBER_COLORS = {
   Arthur: '#0a7d3c',
   Julia:  '#7c3aed',
   Raquel: '#2f5597',
+  Andressa:'#0891b2',
 }
 
 const STATUS_COLORS = {
@@ -20,7 +21,7 @@ const STATUS_COLORS = {
   'Pausada':          '#c45000',
 }
 
-const MEMBERS = ['Arthur', 'Julia', 'Raquel']
+const MEMBERS = ['Arthur', 'Julia', 'Raquel', 'Andressa']
 
 function leadTime(task) {
   if (task.duracao) {

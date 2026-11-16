@@ -3,13 +3,14 @@ import { parseISO, isValid, format, differenceInCalendarDays } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { supabase } from '../supabase'
 
-const MEMBERS = ['Rachel', 'Arthur', 'Julia', 'Raquel']
+const MEMBERS = ['Rachel', 'Arthur', 'Julia', 'Raquel', 'Andressa']
 
 const COLORS = {
   Rachel: '#e11d48',
   Arthur: '#0a7d3c',
   Julia:  '#7c3aed',
   Raquel: '#2f5597',
+  Andressa:'#0891b2',
 }
 
 const SQL_CREATE = `create table if not exists ferias (

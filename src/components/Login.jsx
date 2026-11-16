@@ -5,6 +5,7 @@ const MEMBERS = [
   { name: 'Arthur',    color: '#0a7d3c', role: 'Especialista' },
   { name: 'Julia',     color: '#7c3aed', role: 'Especialista' },
   { name: 'Raquel',    color: '#2f5597', role: 'Especialista' },
+  { name: 'Andressa',  color: '#0891b2', role: 'Analista de Orçamento' },
 ]
 
 export default function Login({ onLogin }) {
