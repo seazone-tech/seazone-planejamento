@@ -5,6 +5,7 @@ const MEMBER_COLORS = {
   Arthur: '#0a7d3c',
   Julia:  '#7c3aed',
   Raquel: '#2f5597',
+  Andressa:'#0891b2',
 }
 
 const STATUS_BAR = {
@@ -22,7 +23,7 @@ function fmt(str) {
   return isValid(d) ? format(d, 'dd/MM', { locale: ptBR }) : '—'
 }
 
-const MEMBERS = ['Arthur', 'Julia', 'Raquel']
+const MEMBERS = ['Arthur', 'Julia', 'Raquel', 'Andressa']
 
 export default function GanttTab({ tasks }) {
   const gt = tasks.filter(t =>

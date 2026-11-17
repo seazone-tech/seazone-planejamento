@@ -11,12 +11,13 @@ import DashboardTab from './DashboardTab'
 import GanttTab from './GanttTab'
 import FeriasTab from './FeriasTab'
 
-const MEMBERS = ['Arthur', 'Julia', 'Raquel']
+const MEMBERS = ['Arthur', 'Julia', 'Raquel', 'Andressa']
 
 const MEMBER_COLORS = {
   Arthur: '#0a7d3c',
   Julia: '#7c3aed',
   Raquel: '#2f5597',
+  Andressa:'#0891b2',
 }
 
 const STATUS_CLASS = {
@@ -118,8 +119,8 @@ export default function Dashboard({ user, displayName, isDemo, onDemoLogout }) {
   }
 
   function handleLogout() {
-    if (isDemo) onDemoLogout()
-    else supabase.auth.signOut()
+    onDemoLogout()
+    if (!isDemo) supabase.auth.signOut()
   }
 
   const filtered = tasks.filter(t => {
