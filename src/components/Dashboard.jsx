@@ -119,8 +119,8 @@ export default function Dashboard({ user, displayName, isDemo, onDemoLogout }) {
   }
 
   function handleLogout() {
-    if (isDemo) onDemoLogout()
-    else supabase.auth.signOut()
+    onDemoLogout()
+    if (!isDemo) supabase.auth.signOut()
   }
 
   const filtered = tasks.filter(t => {
